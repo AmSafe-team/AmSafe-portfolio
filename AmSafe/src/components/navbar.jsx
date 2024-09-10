@@ -15,6 +15,15 @@ export default function NavbarCompo() {
         }`}
       >
         Home
+      </a>{" "}
+      <a
+        href="#resources"
+        onClick={() => handleClick("#resources")}
+        className={`hover:text-red-500 duration-300 ${
+          activeLink === "#resources" ? "text-red-600 font-bold" : ""
+        }`}
+      >
+        Resources
       </a>
       <a
         href="#features"
@@ -24,15 +33,6 @@ export default function NavbarCompo() {
         }`}
       >
         Features
-      </a>
-      <a
-        href="#resources"
-        onClick={() => handleClick("#resources")}
-        className={`hover:text-red-500 duration-300 ${
-          activeLink === "#resources" ? "text-red-600 font-bold" : ""
-        }`}
-      >
-        Resources
       </a>
       <a
         href="#team"

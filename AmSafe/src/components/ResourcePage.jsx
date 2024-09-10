@@ -5,7 +5,7 @@ const ResourcePage = () => {
   return (
     <div className="h-screen w-full flex flex-col justify-start items-center  pt-16">
       <h1 className="text-7xl text-red-500 font-bold">Resources</h1>
-      <div className=" w-3/4 p-4">
+      <div className=" w-full p-4">
         <div className="text-2xl flex w-1/5 px-0 py-1 rounded-lg bg-black/20  justify-around">
           <p
             className={`cursor-pointer px-2 transition-all duration-300 ease-in-out  ${
@@ -13,7 +13,7 @@ const ResourcePage = () => {
             }`}
             onClick={() => setResources(true)}
           >
-            Resources
+            News
           </p>
           <p
             className={`cursor-pointer px-2 transition-all duration-300 ease-in-out  ${
@@ -25,69 +25,118 @@ const ResourcePage = () => {
           </p>
         </div>
         {resources ? (
-          <div>
-            <div id="steps" class="py-12 px-8 ">
-              <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-semibold text-center mb-8">
-                  What to Do in Case of Sexual Harassment
-                </h2>
-
-                <div class="mb-6">
-                  <h3 class="text-xl font-bold mb-2">
-                    1. Ensure Immediate Safety
-                  </h3>
-                  <p>
-                    Move to a safe place and call for help. Reach out to
-                    friends, family, or nearby people for immediate support.
-                  </p>
-                </div>
-
-                <div class="mb-6">
-                  <h3 class="text-xl font-bold mb-2">2. Contact Authorities</h3>
-                  <p>
-                    Dial <strong>100 (Police)</strong>,{" "}
-                    <strong>181 (Women’s Helpline)</strong>, or{" "}
-                    <strong>112</strong> to report the incident and seek
-                    protection.
-                  </p>
-                </div>
-
-                <div class="mb-6">
-                  <h3 class="text-xl font-bold mb-2">3. Document Evidence</h3>
-                  <p>
-                    Save messages, recordings, or any evidence of the
-                    harassment. For physical evidence, avoid washing or
-                    discarding items involved.
-                  </p>
-                </div>
-
-                <div class="mb-6">
-                  <h3 class="text-xl font-bold mb-2">4. File an FIR</h3>
-                  <p>
-                    Go to the nearest police station or file a{" "}
-                    <strong>Zero FIR</strong>. For online harassment, report
-                    through the{" "}
-                    <a
-                      href="https://cybercrime.gov.in"
-                      class="text-blue-500 underline"
-                    >
-                      National Cyber Crime Reporting Portal
-                    </a>
-                    .
-                  </p>
-                </div>
-
-                <div class="mb-6">
-                  <h3 class="text-xl font-bold mb-2">5. Seek Legal Help</h3>
-                  <p>
-                    Lodge a complaint with the{" "}
-                    <strong>National Commission for Women</strong> and get legal
-                    support from NGOs like <strong>Sakhi</strong> and{" "}
-                    <strong>Majlis</strong>.
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 w-full">
+            <a
+              href="https://timesofindia.indiatimes.com/india/india-records-51-cases-of-crime-against-women-every-hour-over-4-4-lakh-cases-in-2022-ncrb-report/articleshow/105731269.cms"
+              className="hover:-translate-y-2 duration-200"
+            >
+              <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-lg mx-auto">
+                <img
+                  className="w-full h-48 object-cover"
+                  src="https://static.toiimg.com/thumb/msid-105731301,imgsize-5400,width-400,resizemode-4/105731301.jpg"
+                  alt="123"
+                />
+                <div className="p-6">
+                  <h2 className="text-xl font-semibold text-gray-900">
+                    India records 51 cases of crime against women every hour;
+                    over 4.4 lakh cases in 2022: NCRB report
+                  </h2>
+                  <p className="mt-2 text-gray-600">
+                    The data disclosed a staggering 4,45,256 cases of crime
+                    against women in 2022, translating to approximately 51 FIRs
+                    every hour. This marked a notable increase from 2021, which
+                    recorded 4,28,278 cases, and 2020, which reported 3,71,503
+                    cases.The NCRB's findings unveiled a crime rate of 66.4 per
+                    lakh population, with a charge sheeting rate of 75.8 in such
+                    cases.
                   </p>
                 </div>
               </div>
-            </div>
+            </a>
+            <a
+              href="https://www.financialexpress.com/india-news/bengaluru-auto-woes-driver-who-slapped-woman-arrested-police-crackdown-on-5000-others-for-violations/3604657/"
+              className="hover:-translate-y-2 duration-200"
+            >
+              <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-lg mx-auto">
+                <img
+                  className="w-full h-48 object-cover"
+                  src="https://images.herzindagi.info/image/2024/Sep/bengaluru-ola-slap-case.jpg"
+                  alt="123"
+                />
+                <div className="p-6">
+                  <h2 className="text-xl font-semibold text-gray-900">
+                    Woman Slapped by Ola Auto Driver In Bengaluru For Ride
+                    Cancellation
+                  </h2>
+                  <p className="mt-2 text-gray-600">
+                    A woman in Bengaluru was allegedly harassed and slapped by
+                    an Ola driver for cancelling the ride. The woman reportedly
+                    cancelled the ride and booked another one to travel with her
+                    friend. The furious auto driver followed the two women and
+                    then started shouting and abusing them. He even tried to
+                    snatch the phone out of the woman’s hand and slapped her in
+                    front of the passersby and the auto driver who didn’t bother
+                    to help.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://theprint.in/india/court-sentences-man-to-1-year-imprisonment-for-sexually-harassing-minor/2261309/"
+              className="hover:-translate-y-2 duration-200"
+            >
+              <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-lg mx-auto">
+                <img
+                  className="w-full h-48 object-cover"
+                  src="https://www.thestatesman.com/wp-content/uploads/2024/04/Untitled-design-2024-04-24T194045.187.jpg"
+                  alt="123"
+                />
+                <div className="p-6">
+                  <h2 className="text-xl font-semibold text-gray-900">
+                    Court sentences man to 1-year imprisonment for sexually
+                    harassing minor
+                  </h2>
+                  <p className="mt-2 text-gray-600">
+                    Around nine years after a man sexually harassed a
+                    four-year-old girl by exposing his private parts to the
+                    child, a court here has sentenced him to one-year rigorous
+                    imprisonment. Additional Sessions Judge Preeti Parewa held
+                    the man, 45, guilty of wrongful confinement and under
+                    section 12 (sexual harassment) of the Protection of Children
+                    from Sexual Offences (POCSO) Act.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://www.hindustantimes.com/business/workplace-sexual-harassment-cases-in-700-nse-listed-firms-increased-29-pending-complaints-rose-67-report-101724509941314.html"
+              className="hover:-translate-y-2 duration-200"
+            >
+              <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-lg mx-auto">
+                <img
+                  className="w-full h-48 object-cover"
+                  src="https://rainmaker.co.in/assets/blogs/d4b16e50-f3fa-11ee-b7ea-001122334455.png"
+                  alt="123"
+                />
+                <div className="p-6">
+                  <h2 className="text-xl font-semibold text-gray-900">
+                    Workplace sexual harassment cases in 700 NSE-listed firms
+                    increased 29%, pending complaints rose 67%: Report
+                  </h2>
+                  <p className="mt-2 text-gray-600">
+                    43% of women experienced non-inclusive behaviours like
+                    harassment or microaggressions, and nearly half had concerns
+                    about their safety at work or safety while travelling to
+                    work, according to an Economic Times article which cited
+                    Deloitte’s 2024 Women @ Work report. This also comes at a
+                    time when total POSH (Prevention of Sexual Harassment)
+                    complaints reported by 700 NSE-listed firms analysed by The
+                    Udaiti Foundation increased from 1,807 during the financial
+                    year 2022-23 to 2,325 in 2023-24, or a 29% increase
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
         ) : (
           <div>
