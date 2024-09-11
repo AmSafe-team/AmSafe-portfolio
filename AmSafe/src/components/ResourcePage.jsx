@@ -3,22 +3,20 @@ import React, { useState } from "react";
 const ResourcePage = () => {
   const [resources, setResources] = useState(true);
   return (
-    <div className="h-screen w-full flex flex-col justify-start items-center  pt-16">
+    <div className="h-auto mt-36 w-full flex flex-col justify-start items-center  pt-16">
       <h1 className="text-7xl text-red-500 font-bold">Resources</h1>
       <div className=" w-full p-4">
-        <div className="text-2xl flex w-1/5 px-0 py-1 rounded-lg bg-black/20  justify-around">
+        <div className="text-xl m-auto flex w-1/5 px-0 py-2 rounded-lg bg-black/20  justify-around">
           <p
-            className={`cursor-pointer px-2 transition-all duration-300 ease-in-out  ${
-              resources ? "bg-white rounded-lg " : ""
-            }`}
+            className={`cursor-pointer px-2 transition-all duration-300 ease-in-out  ${resources ? "bg-white rounded-lg " : ""
+              }`}
             onClick={() => setResources(true)}
           >
             News
           </p>
           <p
-            className={`cursor-pointer px-2 transition-all duration-300 ease-in-out  ${
-              !resources ? "bg-white rounded-lg " : ""
-            }`}
+            className={`cursor-pointer px-2 transition-all duration-300 ease-in-out  ${!resources ? "bg-white rounded-lg " : ""
+              }`}
             onClick={() => setResources(false)}
           >
             Statistics

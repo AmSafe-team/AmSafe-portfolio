@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const TeamPage = () => {
   return (
-    <div className="bg-gra y-100 py-10 w-full">
+    <div className="mt-32 bg-gray-200 y-100 py-10 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col">
         <h1 className="text-7xl text-red-500 font-bold p-6">Meet Our Team</h1>
         <div className=" flex w-full gap-2">
